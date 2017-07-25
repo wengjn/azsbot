@@ -10,7 +10,7 @@ using Microsoft.Bot.Connector;
 
 namespace Zummer.Controllers
 {
-    //[BotAuthentication]
+    [BotAuthentication]
     public class MessagesController : ApiController
     {
         private readonly ILifetimeScope scope;
