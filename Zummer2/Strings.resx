@@ -135,4 +135,7 @@
   <data name="AskForHelp" xml:space="preserve">
     <value>I did not get that. Please @azsbot for help.</value>
   </data>
+  <data name="AzureInsight" xml:space="preserve">
+    <value>Please wait and here is the enrollment number...</value>
+  </data>
 </root>

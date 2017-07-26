@@ -70,6 +70,15 @@ namespace Zummer {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Please wait and here is the enrollment number....
+        /// </summary>
+        internal static string AzureInsight {
+            get {
+                return ResourceManager.GetString("AzureInsight", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Hmm... I did not understand that. Rephrase your message and try again..
         /// </summary>
         internal static string FallbackIntentMessage {

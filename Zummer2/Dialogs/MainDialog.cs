@@ -30,6 +30,13 @@ namespace Zummer.Dialogs
             context.Wait(this.MessageReceived);
         }
 
+        [LuisIntent(ZummerStrings.AzureInsightIntentName)]
+        public async Task AzureInsightIntentHandlerAsync(IDialogContext context, IAwaitable<IMessageActivity> activity, LuisResult result)
+        {
+            await this.handlerFactory.CreateIntentHandler(ZummerStrings.AzureInsightIntentName).Respond(activity, result);
+            context.Wait(this.MessageReceived);
+        }
+
         [LuisIntent(ZummerStrings.HelpIntentName)]
         public async Task HelpIntentHandlerAsync(IDialogContext context, IAwaitable<IMessageActivity> activity, LuisResult result)
         {

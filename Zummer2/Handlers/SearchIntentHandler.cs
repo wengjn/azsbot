@@ -10,17 +10,20 @@ using Microsoft.Bot.Builder.Luis.Models;
 using Microsoft.Bot.Connector;
 using Zummer.Models.Search;
 using Zummer.Services;
+using System.Collections.Generic;
 
 namespace Zummer.Handlers
 {
     internal sealed class SearchIntentHandler : IIntentHandler
     {
         private readonly ISearchService bingSearchService;
+        private readonly IAzureDiagnosticService azureDiagnosticService;
         private readonly IBotToUser botToUser;
 
-        public SearchIntentHandler(IBotToUser botToUser, ISearchService bingSearchService)
+        public SearchIntentHandler(IBotToUser botToUser, ISearchService bingSearchService, IAzureDiagnosticService azureDiagnosticService)
         {
             SetField.NotNull(out this.bingSearchService, nameof(bingSearchService), bingSearchService);
+            SetField.NotNull(out this.azureDiagnosticService, nameof(azureDiagnosticService), azureDiagnosticService);
             SetField.NotNull(out this.botToUser, nameof(botToUser), botToUser);
         }
 

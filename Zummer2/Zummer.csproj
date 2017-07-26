@@ -67,6 +67,12 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.IdentityModel.Clients.ActiveDirectory, Version=3.14.2.11, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.IdentityModel.Clients.ActiveDirectory.3.14.2\lib\net45\Microsoft.IdentityModel.Clients.ActiveDirectory.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Clients.ActiveDirectory.Platform, Version=3.14.2.11, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.IdentityModel.Clients.ActiveDirectory.3.14.2\lib\net45\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.IdentityModel.Protocol.Extensions, Version=1.0.40306.1554, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.IdentityModel.Protocol.Extensions.1.0.4.403061554\lib\net45\Microsoft.IdentityModel.Protocol.Extensions.dll</HintPath>
       <Private>True</Private>
@@ -128,11 +134,16 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Handlers\AzureInsightIntentHandler.cs" />
     <Compile Include="Handlers\HelpIntentHandler.cs" />
     <Compile Include="Handlers\HandlerFactory.cs" />
     <Compile Include="Handlers\ZummerStrings.cs" />
     <Compile Include="Models\Search\BingSearch.cs" />
     <Compile Include="Models\Search\ZummerSearchResult.cs" />
+    <Compile Include="Services\AzureDiagnosticService.cs" />
+    <Compile Include="Services\DiagnosticRequest.cs" />
+    <Compile Include="Services\DiagnosticResponse.cs" />
+    <Compile Include="Services\DiagnosticServiceUrlBuilder.cs" />
     <Compile Include="Services\IApiHandler.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Services\ApiHandler.cs" />
@@ -140,7 +151,9 @@
     <Compile Include="Handlers\GreetingIntentHandler.cs" />
     <Compile Include="Handlers\IIntentHandler.cs" />
     <Compile Include="Handlers\SearchIntentHandler.cs" />
+    <Compile Include="Services\IAzureDiagnosticService.cs" />
     <Compile Include="Services\ISearchService.cs" />
+    <Compile Include="Services\ReplyMessageBuilder.cs" />
     <Compile Include="Strings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
