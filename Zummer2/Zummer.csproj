@@ -134,7 +134,9 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dialogs\Survey.cs" />
     <Compile Include="Handlers\AzureInsightIntentHandler.cs" />
+    <Compile Include="Handlers\VMIntentHandler.cs" />
     <Compile Include="Handlers\HelpIntentHandler.cs" />
     <Compile Include="Handlers\HandlerFactory.cs" />
     <Compile Include="Handlers\ZummerStrings.cs" />

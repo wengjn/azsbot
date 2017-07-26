@@ -25,9 +25,9 @@ namespace Zummer.Services
 
         private const string Authority = "https://login.windows.net/microsoft.onmicrosoft.com";
 
-        private const string ClientId = "4b89876c-9ed0-47bd-a909-2ab6fb14a359";
+        private const string ClientId = "XXX";
 
-        private const string ClientKey = "s3FxPrUcdQf7QYlXKf72CO0f1Z19YORTdJQUHSdAdYo=";
+        private const string ClientKey = "XXX";
 
         private AuthenticationResult authenticationResult;
 

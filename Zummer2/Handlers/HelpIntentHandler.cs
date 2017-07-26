@@ -23,7 +23,7 @@ namespace Zummer.Handlers
         public async Task Respond(IAwaitable<IMessageActivity> activity, LuisResult result)
         {
             var helpMessage = new ReplyMessageBuilder();
-            helpMessage.AppendLine("I did not get that. This is still beta. Please be patient with me.");
+            helpMessage.AppendLine("I'm still in beta. Please be patient with me.");
             helpMessage.AppendLine("Currently we only support the following scenario: ");
 
             var header = new[] { "Scenario Name", "Example Phrase" };
@@ -32,6 +32,8 @@ namespace Zummer.Handlers
             var textInfo = new CultureInfo("en-US", false).TextInfo;
             tableBody.Add("Get EA # ");
             tableBody.Add("Get me enrollment number for XXXX");
+            tableBody.Add("VM Console log data ");
+            tableBody.Add("Get me VM console log data");
             tableBody.Add("Bing search ");
             tableBody.Add("who is tom hanks");
             helpMessage.AppendTable(2, tableBody, header);

@@ -11,6 +11,8 @@
         public const string AzureInsightIntentName = "AzureInsight";
         public const string SubId = "SubId";
 
+        public const string VMIntentName = "VM";
+
         public const string NoneIntentName = "None";
     }
 }

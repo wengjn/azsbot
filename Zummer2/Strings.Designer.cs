@@ -88,7 +88,7 @@ namespace Zummer {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Hi! What would you like to read about? I can fetch you the best Wikipedia results on any subject..
+        ///   Looks up a localized string similar to Hi! I&apos;m the smart assistant for you to resolve suppor cases. What would you like to know about? I can fetch you the best related diagnostic data..
         /// </summary>
         internal static string GreetOnDemand {
             get {
@@ -120,6 +120,15 @@ namespace Zummer {
         internal static string SearchTopicTypeMessage {
             get {
                 return ResourceManager.GetString("SearchTopicTypeMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please wait and here is the VM console log data....
+        /// </summary>
+        internal static string VM {
+            get {
+                return ResourceManager.GetString("VM", resourceCulture);
             }
         }
     }

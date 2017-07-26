@@ -124,7 +124,7 @@
     <value>Hmm... I did not understand that. Rephrase your message and try again.</value>
   </data>
   <data name="GreetOnDemand" xml:space="preserve">
-    <value>Hi! What would you like to read about? I can fetch you the best Wikipedia results on any subject.</value>
+    <value>Hi! I'm the smart assistant for you to resolve suppor cases. What would you like to know about? I can fetch you the best related diagnostic data.</value>
   </data>
   <data name="SearchTopicTypeMessage" xml:space="preserve">
     <value>Here you go.</value>
@@ -137,5 +137,8 @@
   </data>
   <data name="AzureInsight" xml:space="preserve">
     <value>Please wait and here is the enrollment number...</value>
+  </data>
+  <data name="VM" xml:space="preserve">
+    <value>Please wait and here is the VM console log data...</value>
   </data>
 </root>
